@@ -30,7 +30,7 @@ Here's a typical workflow with the application:
 2.  **Paste List Page URL:** Enter the URL of the website containing the list of papers (e.g., `https://openaccess.thecvf.com/CVPR2024?day=all`).
 3.  **Select Download Directory:** Specify where you want to save the downloaded PDF files.
 
-    `![Step 1: Main Interface](image/Step 1.png)`
+    `![Step 1: Main Interface](image/Step_1.png)`
 
 ---
 
@@ -40,7 +40,7 @@ Here's a typical workflow with the application:
 * The application will load basic information (title, detail page link, year) from the URL you provided.
 * Items will appear in the results list. Checkboxes next to each item will be enabled, allowing you to select them.
 
-    `![Step 2: Initial Item Search Results](image/Step 2.png)`
+    `![Step 2: Initial Item Search Results](image/Step_2.png)`
 
 ---
 
@@ -56,7 +56,7 @@ Here's a typical workflow with the application:
 
 * Browse through the list (either the full list or the filtered list) and **tick the checkboxes** of the papers you are interested in.
 
-    `![Step 3: Selecting Items](image/Step 3.png)`
+    `![Step 3: Selecting Items](image/Step_3.png)`
 
 ---
 
@@ -66,7 +66,7 @@ Here's a typical workflow with the application:
 * The application will visit the detail page of *each item you selected* to retrieve the direct PDF link and abstract content.
 * The list will update. Tooltips will show more detailed information.
 
-    `![Step 4: Fetching Details](image/Step 4.png)`
+    `![Step 4: Fetching Details](image/Step_4.png)`
 
 ---
 
@@ -75,7 +75,7 @@ Here's a typical workflow with the application:
 * **View Abstracts:** Select items (that have had details fetched and have an abstract), then click the **"Show Abstracts (Selected)"** button. A new window will appear displaying the abstracts.
 * **Download PDFs:** Select items (that have had details fetched and have a PDF link), then click the **"Download PDFs (Selected)"** button (either above the list or the large one at the bottom).
 
-    `![Step 5: View Abstract or Download](image/Step 5.png)`
+    `![Step 5: View Abstract or Download](image/Step_5.png)`
 
 ---
 
