@@ -255,7 +255,7 @@ class PaperDownloaderApp:
             messagebox.showerror("URL Error", "Please enter a valid web page URL.")
             return
 
-        self.find_items_button.config(state=tk.DISABLED, text="1. Finding Items...")
+        self.find_items_button.config(state=tk.DISABLED, text="Finding Items...")
         self.fetch_details_for_selected_button.config(state=tk.DISABLED)
         self.apply_filters_button.config(state=tk.DISABLED)
         self.log_message("Starting to find all items from the list page...")
@@ -343,7 +343,7 @@ class PaperDownloaderApp:
             # import traceback # Uncomment for detailed traceback
             # self.log_message(traceback.format_exc(), "DEBUG") # Uncomment for detailed traceback
         finally:
-            self.find_items_button.config(state=tk.NORMAL, text="1. Find Items from List Page")
+            self.find_items_button.config(state=tk.NORMAL, text="Find Items from List Page")
             self.fetch_details_for_selected_button.config(state=tk.NORMAL)
             self.apply_filters_button.config(state=tk.NORMAL)
             self.status_message_var.set(f"Found {len(self.all_items_master_list)} items. Select items to fetch details or apply filters.")
@@ -429,7 +429,7 @@ class PaperDownloaderApp:
         self.log_message(f"Finished fetching details for {total_items_to_process} selected items.")
         self.refresh_display_and_pagination() 
         self.status_message_var.set(f"Details fetched. {len(self.items_for_display_list)} items currently displayed.")
-        self.fetch_details_for_selected_button.config(state=tk.NORMAL, text="2. Fetch Details for SELECTED Items")
+        self.fetch_details_for_selected_button.config(state=tk.NORMAL, text="Fetch Details for SELECTED Items")
 
     def start_fetch_details_for_selected_thread(self):
         selected_items_for_details = [
@@ -444,7 +444,7 @@ class PaperDownloaderApp:
             return
 
         self.log_message(f"Starting to fetch details for {len(selected_items_for_details)} selected items...")
-        self.fetch_details_for_selected_button.config(state=tk.DISABLED, text="2. Fetching Details...")
+        self.fetch_details_for_selected_button.config(state=tk.DISABLED, text="Fetching Details...")
         
         thread = threading.Thread(target=self._thread_for_fetching_details, 
                                   args=(selected_items_for_details, self.list_page_url_var.get()))
