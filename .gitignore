@@ -1,0 +1,43 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE configuration files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+logs/
+
+# Downloaded papers (user might configure this, add their specific path if needed)
+# downloaded_papers/ # Example, if you have a default or common download folder within the project
+
+# Secrets - if you ever add any configuration files with sensitive info
+# config.ini
+# secrets.json
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
